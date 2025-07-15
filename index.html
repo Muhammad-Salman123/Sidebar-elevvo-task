@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 1 - Collapsible Sidebar</title>
+
+  <!-- FontAwesome (CSS-based, reliable CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Toggle Button -->
+  <button id="toggleBtn" type="button">☰</button>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <!-- Close Button -->
+    <button id="closeBtn" class="close-btn">✖</button>
+
+    <!-- Logo -->
+    <div class="logo">My Logo</div>
+
+    <!-- Navigation Links -->
+    <ul class="nav">
+      <li><i class="fa fa-home"></i> Home</li>
+      <li><i class="fa fa-user"></i> Profile</li>
+      <li><i class="fa fa-envelope"></i> Messages</li>
+      <li><i class="fa fa-cog"></i> Settings</li>
+      <li><i class="fa fa-sign-out-alt"></i> Logout</li>
+    </ul>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
