@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Sidebar base */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+/* Sidebar when open */
+#sidebar.open {
+  left: 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Navigation List */
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav li i {
+  margin-right: 10px;
+}
+
+.nav li:hover {
+  background-color: #444;
+  transition: background-color 0.2s ease;
+}
+
+/* Toggle Button */
+#toggleBtn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Close Button inside Sidebar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  #sidebar {
+    width: 200px;
+  }
+
+  .nav li {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  #toggleBtn,
+  .close-btn {
+    font-size: 18px;
+  }
+}
