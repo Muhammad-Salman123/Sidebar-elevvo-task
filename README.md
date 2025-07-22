@@ -18,6 +18,8 @@ This is a responsive collapsible sidebar built from scratch using *HTML, **CSS, 
 - CSS
 - JavaScript
 - FontAwesome (via CDN)
+👉 [View Live Site](https://muhammad-salman123.github.io/Sidebar-elevvo-task/)
+
 
 ##  Screenshots
 
